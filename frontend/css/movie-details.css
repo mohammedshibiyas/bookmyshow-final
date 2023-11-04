@@ -160,6 +160,9 @@
 .movei-content-right{
     padding-top: 40px;
 }
+.add-yourrating-box-right a{
+    color: black;
+}
 .movie-name{
     color: white;
     margin-left: 0 !important;

@@ -7,8 +7,8 @@ async function getdata(){
         s+=` <div class="movies">
         <div class="row">
             
-            <div class="col-lg">
-               <a href="./pages/movei-details.html?id=${dt._id}" title="link"> <img src="${dt.Movie_banner}" alt=""></a>
+            <div class="col-lg rec-movie">
+               <a href="./pages/movei-details.html?id=${dt._id}" title="link"> <img src="${dt.Movie_poster}" alt=""></a>
                 <p class="movies-p1">${dt.Movie_Title}</p>
                 <p class="movies-p2">${dt.Category}</p>
             </div>

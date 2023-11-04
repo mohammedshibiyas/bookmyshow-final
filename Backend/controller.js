@@ -36,3 +36,10 @@ export async function delMovie(req,res){
         res.status(404).send(error)
     })
 }
+export async function edit(req,res){
+    const{id}=req.params;
+    const{...movie}=req.body;
+     await schema.updateOne({_id:id},{$set:{...movie}});
+    console.log(movie);
+    res.status(200).send("updated")
+}
