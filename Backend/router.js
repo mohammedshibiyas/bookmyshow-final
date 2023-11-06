@@ -9,7 +9,7 @@ router.route("/editmovie/:id").patch(controller.edit);
 
 router.route("/adduser").post(controller.addUser);
 router.route("/login").post(controller.login);
-router.route("/home").get(Auth,controller.home);
+// router.route("/home").get(Auth,controller.home);
 
     // res.status(200).send("this is controller"))
 export default router;

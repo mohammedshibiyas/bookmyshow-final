@@ -7,18 +7,21 @@
 .main-navbar{
     display: flex !important;
     height: 70px;
-    width: 100%;
+    width: 150%;
     background:rgb(51, 53, 69);
-    padding-left: 150px;
+    padding-left: 100px;
     padding-right: 150px;
 }
 .main-nav-left{
-    width: 70%;
+    width: 100%;
+
     padding-top: 14px;
     /* background-color: RED; */
 }
 .main-nav-right{
-    width: 30%;
+    width: 100%;
+    margin-left: 10px;
+   
     padding-top: 20px;
     /* background-color: yellow; */
 }
@@ -128,6 +131,15 @@
 }
 .movies{
     width: 22%;
+}
+.movies-p{
+    width: 100%;
+}
+.movies-p img{
+    width:100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 .list-data{
     display: flex;
