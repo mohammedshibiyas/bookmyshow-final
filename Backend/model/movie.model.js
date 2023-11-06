@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const schema=new mongoose.Schema({
+const movie_schema=new mongoose.Schema({
     Movie_Title:{type:String},
     Category:{type:String},
     Rating:{type:String},
@@ -10,4 +10,4 @@ const schema=new mongoose.Schema({
     Movie_poster:{type:String}
         
 })
-export default mongoose.model.movies||mongoose.model("movie",schema)
+export default mongoose.model.movies||mongoose.model("movie",movie_schema)

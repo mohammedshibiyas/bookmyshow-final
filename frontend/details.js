@@ -16,7 +16,7 @@ async function getDetails(){
         s+=`     <img src="../images/leo.jpg" alt="" class="background-image">
         <div class="movie-details-content">
            <div class="movei-content-left">
-            <div class="poster-cap"><img src="${data.Movie_poster}"><p class="poster-cap-p">in cinemas</p></div>
+            <div class="poster-cap"><img src="${data.Movie_poster}"></div>
            </div>
            <div class="movei-content-right">
             <h1 class="movie-name">${data.Movie_Title}</h1>
