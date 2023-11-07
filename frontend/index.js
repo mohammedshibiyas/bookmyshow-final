@@ -3,7 +3,7 @@ async function getdata(){
     const data=await task.json();
     console.log(data);
     s="";
-    data.map(dt=>{
+    data.map(dt=>{s
         s+=` <div class="movies">
         <div class="row">
             
@@ -19,6 +19,33 @@ async function getdata(){
 
 document.getElementById("list-data").innerHTML=s;
 
+const key=localStorage.key(0);
+const value=JSON.parse(localStorage.getItem(key));
+fetch("http://localhost:3004/api/home",{
+    headers:{Authorization:`Bearer ${value}`},
+})
+.then((res)=>res.json())
+.then((data)=>{
+    const{msg}=data;
+    document.getElementById("name").innerHTML=msg
+    ?`${msg}<button class="sign-in" onclick="del()" >Logout</button> <button class="sign-in">
+     <a href="./pages/register-movie.html" id="reg">Register</a><button>`
+    :` <a href="./pages/create.html"><button class="sign-in">Login</button></a>`;
+})
+.catch((error)=>{
+    console.log(error);
+})
 
+   
 }
+
 getdata();
+function del(){
+  var confirmed=confirm("do you want to logout")
+  if(confirmed)
+  {
+    localStorage.clear();
+    location.reload()
+  }
+    
+}
